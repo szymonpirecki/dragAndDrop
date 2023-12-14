@@ -1,0 +1,17 @@
+#available browsers: CHROME, FIREFOX, IE, EDGE
+#available environments: test
+environment: test
+
+browserSettings:
+  browserName: firefox
+  browserHeadless: false
+  maximizeWindow: true
+
+
+environments:
+  test:
+    envName: test
+    appUrl: https://demo.aspnetawesome.com/DragAndDropDemo
+#    appUrl: https://google.com
+    explicitWaitTimeout: 10
+
