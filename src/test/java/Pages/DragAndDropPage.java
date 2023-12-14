@@ -20,7 +20,7 @@ public class DragAndDropPage extends BasePage {
         super(driver);
     }
 
-    @FindAll(@FindBy(css = "div .ditem"))
+    @FindAll(@FindBy(xpath = "//p[contains(text(), 'drag source')]/../div"))
     private List<WebElement> elementsInDragZone;
 
     @FindBy(xpath = "//p[contains(text(), 'drop target')]/..")
